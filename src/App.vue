@@ -3,7 +3,7 @@
     <Catogram :cats="cats">
       <template #boss="{item}">
         <h5>{{ item.name }}</h5>
-        <img :src="item.image" width="200" alt="" />
+        <img :src="item.image" width="200" alt="" class="m-2" />
       </template>
       <template #employees="{item}">
         <div>
@@ -28,8 +28,8 @@ export default {
   },
   data() {
     return {
-      cats
-    }
+      cats,
+    };
   },
 };
 </script>
